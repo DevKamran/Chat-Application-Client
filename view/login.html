@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../lib/angular.min.js"></script>
+    <!-- <script src="https://code.angularjs.org/1.6.6/angular-route.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <!--  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCjTvkCaVpby-UfixkCnc59z-cDpSnQBjE",
+    authDomain: "efsolchatsupport.firebaseapp.com",
+    databaseURL: "https://efsolchatsupport.firebaseio.com",
+    projectId: "efsolchatsupport",
+    storageBucket: "efsolchatsupport.appspot.com",
+    messagingSenderId: "394885500402"
+  };
+  firebase.initializeApp(config);
+</script> -->
+    
+   <!--  <script src="js/app.js"></script>
+    <script src="js/chatApp_Ctrl.js"></script> -->
+    <!-- <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body >
+    <br>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Web Based Firebase Chat Application</div>
+             <p>My first expression: {{ 5 + 5 }}</p> 
+            <div class="panel-body">
+                 <div class="firstPage">
+                <form>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" required
+                          ng-model="Email">
+                        </div>
+                       <div class="form-group">
+                          <label for="comment">Your Question:</label>
+                          <textarea class="form-control" rows="2" ng-model="question" required id="comment" placeholder="Enter email"></textarea>
+                        </div>
+                        
+                        
+                    <!-- <button class="btn btn-info" type="submit" > -->
+                        <a class="btn btn-primary" href="../index1233.html" ng-disabled="Email|| question ">
+                        Submit</a>
+                        <!-- </button> -->
+                </form>
+            </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
